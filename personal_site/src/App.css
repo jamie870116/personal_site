@@ -1,0 +1,125 @@
+/* :root refers to the root element of the whole html, usually <html></html> */
+
+html {
+  --paynes-gray: #546a76;
+  --dark-purple: #1d1128;
+  --emerald: #26c485;
+  --ghost-white: #e0e1e9;
+  --light-cyan: #ddfdfe;
+
+  /* --eerie-black: #1B2021;
+  --ebony: #51513D;
+  --verdigrils: #50A2A7;
+  --air-force-blue: #568EA3;
+  --pearl: #E3DCC2; */
+  --pearl: #51513D;
+  --ghost-white: #1B2021;
+  --eerie-black: #E3DCC2;
+  --ebony: #E3DCC2;
+  font-family: 'Vollkorn', serif !important;
+}
+
+html.light {
+  --pearl: #51513D;
+  --ghost-white: #1B2021;
+  --eerie-black: #E3DCC2;
+}
+
+/* change bg color */
+.root-container {
+  height: 100vh;
+  /* width: 80%; */
+  padding: 0 10%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #1B2021; */
+  background-color: var(--eerie-black);
+}
+
+
+.container {
+  width: 60%;
+  height: 100vh;
+  float: right;
+  margin-top: 0px;
+  /* min-width: 75%; */
+  font-family: 'Vollkorn', serif !important;
+
+}
+
+.main-content {
+  /* padding: 100px 50px 40px; */
+  /* padding: 100px 80px 60px; */
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  /* padding: 5rem 1.5rem; */
+  padding: 0;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #26C485;
+}
+
+.back-link a:hover {
+  text-decoration: none;
+  color: #1D1128;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.2em;
+  /* line-height: 1.1; */
+}
+
+p {
+  font-size: 1.2em;
+
+}
+
+input {
+  font-size: 1.4em;
+}
+
+a {
+  font-size: 1.4em;
+}
+
+button {
+  font-size: 1.4em;
+}
+
+@media (min-width: 2500px) {
+  h1 {
+    font-size: 4.2em;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 3.2em;
+    /* line-height: 1.1; */
+  }
+
+  p {
+    font-size: 2em;
+
+  }
+
+  a {
+    font-size: 1.6em;
+  }
+
+  button {
+    font-size: 1.8em;
+  }
+
+  input {
+    font-size: 2em;
+  }
+}

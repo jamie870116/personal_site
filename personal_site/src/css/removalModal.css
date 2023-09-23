@@ -1,0 +1,18 @@
+.modal-custom {
+    font-family: 'Vollkorn', serif !important;
+}
+.btn-del{
+    font-family: 'Vollkorn', serif;
+    width: auto;
+    align-self: center;
+    /* margin: 10px 0;
+    padding: auto 100px; */
+    border: none;
+    background-color: #B75D69;
+    color: #E0E1E9;
+}
+.modal-custom .btn-cancel {
+    background-color: #546A76;
+    color: #E0E1E9;
+    border: none;
+}
