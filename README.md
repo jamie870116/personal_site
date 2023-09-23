@@ -1,10 +1,5 @@
 # This is my personal website
 
-~~Link: http://18.222.77.70/~~
-I just purchased a domain name! Yayyy!
-
-## The current link is: http://kevinhomepage.com/
-
 ### Remain features:
 1. Backend (Django):
   + ~~Academic~~
