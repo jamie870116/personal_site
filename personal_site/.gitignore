@@ -25,3 +25,4 @@ dist-ssr
 
 GiscusConfigs.js
 *.py
+personal_site/src/components/DarkModeToggle.jsx

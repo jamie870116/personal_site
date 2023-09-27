@@ -20,14 +20,19 @@ function Education(props, innerRef) {
             .then(data => setEducation(data))
             .catch(err => console.log(err))
     }
+    const urls = {
+        "National Chung Hsing University": "https://www.nchu.edu.tw/index",
+        "National Taichung University of Sci. and Tech.": "https://www.nutc.edu.tw/",
+        "University of California, Santa Barbara": "https://www.ucsb.edu/",
 
+    }
     const renderEducation = () => {
         const educations = education.map((edu, idx) => {
             return (
                 <div className="home-degree-content" key={idx}>
                     <div className="home-degree-content-image">
-                        <a href="https://www.nchu.edu.tw/index1.php">
-                            <img src={edu.badge} alt="NCHU image" />
+                        <a href={urls[edu.school]} target="_blank" rel="noreferrer">
+                            <img src={edu.badge} alt={edu.school + ' image'} />
                         </a>
                     </div>
                     <div className="home-degree-content-word">

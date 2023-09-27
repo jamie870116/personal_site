@@ -19,8 +19,8 @@ function Home(props, innerRef) {
         <div className='home-text'>
 
           <p>
-            I am Jamie Lai, a passionate and driven computer science graduate student with a focus on practical applications.
-            I will soon be pursuing a Master of Science degree in Computer Science at UC Santa Barbara.
+            I am Chieh-Ying (Jamie) Lai, a passionate and driven computer science graduate student with a focus on practical applications.
+            I am pursuing a Master of Science degree in Computer Science at UC Santa Barbara.
             Through my past experiences, I have developed proficiency in Python, PHP, and JavaScript, as well as related frameworks and AI libraries.
             <br /><br />
             With a growth mindset and a constant drive for learning,

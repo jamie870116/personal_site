@@ -2,7 +2,7 @@
 import React from 'react'
 import '../css/resume.css'
 import { Document, Page } from 'react-pdf'
-import resume_pdf from '../assets/Kevin_Resume_software.pdf'
+import resume_pdf from '../assets/Chieh-Ying-Lai_Resume.pdf'
 import { pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
