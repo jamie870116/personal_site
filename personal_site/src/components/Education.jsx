@@ -2,9 +2,9 @@
 import { forwardRef } from "react";
 import { api_path } from '../api_path'
 import React from 'react'
-import nchu_badge from '../assets/NCHU_badge.png'
-import nutc_badge from '../assets/NUTC_badge.png'
-import ucsb_badge from '../assets/UCSB_badge.png'
+import NCHU_badge from '../assets/NCHU_badge.png'
+import NUTC_badge from '../assets/NUTC_badge.png'
+import UCSB_badge from '../assets/UCSB_badge.png'
 
 
 function Education(props, innerRef) {
@@ -32,9 +32,9 @@ function Education(props, innerRef) {
     }
 
     const badges = {
-        "National Chung Hsing University": nchu_badge,
-        "National Taichung University of Sci. and Tech.": nutc_badge,
-        "University of California, Santa Barbara": ucsb_badge,
+        "National Chung Hsing University": NCHU_badge,
+        "National Taichung University of Sci. and Tech.": NUTC_badge,
+        "University of California, Santa Barbara": UCSB_badge,
 
     }
     const renderEducation = () => {
