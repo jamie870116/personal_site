@@ -7,6 +7,8 @@ import ImageGallery from 'react-image-gallery';
 // import { WaninImages } from '../WaninImages';
 import Skill from './Skill'
 import { api_path } from '../api_path'
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -15,11 +17,12 @@ function Projects(props, innerRef) {
     const [projects, setProjects] = useState([])
     const [isAuthenticated, setIsAuthenticated] = React.useState(null);
     const loggedInUser = localStorage.getItem("authenticated");
+    const navigate = useNavigate();
     useEffect(() => {
         getProjects();
         if (loggedInUser) {
             setIsAuthenticated(loggedInUser);
-        };
+        }
     }, []);
 
     console.log(projects)
@@ -49,6 +52,7 @@ function Projects(props, innerRef) {
     };
 
     const handleDelete = (id) => {
+        const endpoint = api_path + "/api/experience/mixins/"
         const requestOptions = {
             'method': 'DELETE',
             'headers': {
@@ -57,12 +61,17 @@ function Projects(props, innerRef) {
         };
 
         fetch(endpoint + id + '/', requestOptions)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
+            .then(res => {
                 getProjects()
+                navigate("/");
             })
+            // .then(data => {
+            //     console.log(data)
+            //     getProjects()
+            //     navigate("/");
+            // })
             .catch(err => console.log(err));
+
     };
 
 
