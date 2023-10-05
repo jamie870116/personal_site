@@ -1,5 +1,5 @@
 # This is my personal website
-## And this is the front end in React JS
+This is the front end in React JS
 Public IPv4 address using AWS EC2:
 http://13.210.248.110/
 
