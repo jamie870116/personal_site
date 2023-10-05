@@ -1,16 +1,6 @@
 # This is my personal website
+## And this is the front end in React JS
+Public IPv4 address using AWS EC2:
+http://13.210.248.110/
 
-### Remain features:
-1. Backend (Django):
-  + ~~Academic~~
-  + ~~Education~~
-  + ~~MataData~~
-  + ~~Experience:~~
-    + ~~Add the skill used~~
-  +  ~~Deploy on AWS~~
-2. Better styling (RecatJS):
-  + RWD for cellphone
-  + More animations
-  + ~~useRef and do nore navigations~~
-  + ~~Add contact with matadata API~~
-3. ~~Add pics~~
+The back end of this website is in another [repo](https://github.com/jamie870116/backend).
