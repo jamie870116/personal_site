@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import '../css/projects.css'
 import "react-image-gallery/styles/css/image-gallery.css";
