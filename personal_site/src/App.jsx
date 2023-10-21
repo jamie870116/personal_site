@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Projects from './components/Projects'
@@ -16,6 +16,26 @@ import { useRef } from 'react'
 
 
 function App() {
+
+  const containerRef = useRef(null);
+
+  React.useEffect(() => {
+    const handleScroll = (e) => {
+      e.preventDefault();
+      // console.log("滚动事件触发了")
+      const container = containerRef.current;
+      container.scrollTop += e.deltaY;
+    };
+
+    const containerElement = containerRef.current;
+    document.addEventListener("wheel", handleScroll, { passive: false });
+
+    return () => {
+      document.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
+
   const homeRef = useRef(null);
   const educationRef = useRef(null);
   const projectsRef = useRef(null);
@@ -32,7 +52,7 @@ function App() {
       <Header
         refs={refs} />
       <div className="container">
-        <div className="main-content">
+        <div className="main-content" ref={containerRef}>
           <Routes>
             <Route path="/" element={<Home
               educationRef={educationRef}
